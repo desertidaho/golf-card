@@ -6,13 +6,14 @@ namespace golf_card.Models
   public class Golfer
   {
     public string Name { get; set; }
-    public List<Score> Scores { get; set; }
+    // List<Score> Scores { get; set; }
 
 
 
-    public Golfer()
+    public Golfer(string name)
     {
-      Scores = new List<Score>();
+      Name = name;
+      // Scores = new List<Score>();
     }
   }
 }
